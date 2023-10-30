@@ -1,6 +1,6 @@
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 import React from "react";
-
+import  Logo  from "../assets/Logo.svg";
 const Header = () => {
   return (
     <>
@@ -9,12 +9,19 @@ const Header = () => {
         elevation={0}
         width="100%"
         sx={{
-          bgcolor: "#95BDFF",
+          bgcolor: "#fff",
+          height:'5rem',
         }}
       >
         <Container>
-          <Toolbar>
-            <Typography fontWeight={800} fontSize={32}>Self Skin Care</Typography>
+          <Toolbar sx={{
+            padding:'10px',
+            display: 'flex',
+            height:'4rem'
+          }}>
+            <img src={Logo} alt="logo" style={{
+              height:'3.5rem',
+            }}/>
           </Toolbar>
         </Container>
       </AppBar>

@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <Box display='flex'  height='100%'>
       <Header />
       <Box  sx={{
-        margin: '4rem 0rem',
+        margin: '5rem 0rem',
         width: '100%',
       }}>
       {children}
